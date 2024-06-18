@@ -1,4 +1,4 @@
-import MoreArrow from '@/assets/icons/moreArrow.svg'
+import MoreArrow from '@/assets/icons/MoreArrow.svg'
 import { Icon } from './Icon'
 
 export const MoreArrowIcon = Icon(MoreArrow)
