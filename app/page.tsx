@@ -27,6 +27,16 @@ export default function Home() {
           />
         ))}
       </div>
+      <div className='flex flex-col items-center justify-center p-10 w-full h-[50vh] md:h-[30vh] lg:h-[50vh] max-w-[1400px] mx-auto text-[30px] md:text-[38px] leading-[1.2em]'>
+        <p>Let &apos;s work together.</p>
+        <a
+          href='mailto:oli@oh.studio'
+          className='text-gray-1 hover:text-gray-1/50 '
+        >
+          {' '}
+          Get in touch.
+        </a>
+      </div>
     </main>
   )
 }

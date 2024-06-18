@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className='w-full p-10 flex items-center justify-between'>
+    <footer className='w-full p-10 flex flex-col md:flex-row gap-[10px] items-center justify-between'>
       <div>
         <p className='text-sm'>&copy; Oli Harris 2023</p>
       </div>
