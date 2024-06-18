@@ -27,15 +27,15 @@ export default function ProjectCard({
         )}
       >
         <div>
-          <h4 className='text-white text-[14px] xl:text-[18px]'>{title}</h4>
-          <h4
+          <p className='text-white text-sm xl:text-[18px]'>{title}</p>
+          <p
             className={cn(
               'text-white/50 text-sm xl:text-[18px]',
               available ? 'hidden' : 'inline'
             )}
           >
             Coming Soon
-          </h4>
+          </p>
         </div>
         <div
           className={cn(
