@@ -4,7 +4,7 @@ export default function StartPage({ onNext }: { onNext: () => void }) {
   return (
     <div className='space-y-8'>
       <div>
-        <p className='text-[18px] font-semibold'>Welcome!</p>
+        <p className='text-[18px] font-medium'>Welcome!</p>
         <p className='text-gray-600'>
           Thanks for providing feedback - let&apos;s go!
         </p>
@@ -20,7 +20,8 @@ export default function StartPage({ onNext }: { onNext: () => void }) {
       </div>
       <div className='space-y-2'>
         <p className='text-gray-400 text-center text-sm'>
-          Powered by <span className='font-bold text-gray-600'>Formbricks</span>
+          Powered by{' '}
+          <span className='font-medium text-gray-600'>Formbricks</span>
         </p>
         <div className='h-2 bg-gray-600 rounded-full'></div>
       </div>
