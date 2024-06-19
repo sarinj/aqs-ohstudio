@@ -32,7 +32,7 @@ export const projects: ProjectType[] = [
     available: true,
   },
   {
-    src: '	https://framerusercontent.com/images/3WALBX7nnuG7p85CLjlVmWPDHw.jpg?scale-down-to=1024',
+    src: 'https://framerusercontent.com/images/3WALBX7nnuG7p85CLjlVmWPDHw.jpg?scale-down-to=1024',
     title: 'Schuh',
     type: 'image',
     available: true,
