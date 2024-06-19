@@ -1,6 +1,6 @@
 export default function ContactPage() {
   return (
-    <div className='flex flex-col flex-grow items-center justify-center p-5 md:p-10 w-full h-[74vh] md:h-[77.3vh] max-w-[1400px] mx-auto text-[36px] md:text-[48px] xl:text-[72px] leading-[1.2em]'>
+    <div className='flex flex-col flex-grow items-center justify-center p-5 md:p-10 w-full min-h-[calc(100vh-278px)] md:min-h-[calc(100vh-208px)] max-w-[1400px] mx-auto text-[36px] md:text-[48px] xl:text-[72px] leading-[1.2em]'>
       <p>Let &apos;s work together.</p>
       <a
         href='mailto:oli@oh.studio'

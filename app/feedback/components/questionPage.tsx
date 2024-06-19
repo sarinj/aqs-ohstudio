@@ -5,8 +5,8 @@ import Button from '@/components/button/button'
 interface QuestionPageProps {
   question: Question
   answer: Answer
-  isFirst?: boolean
-  isLast?: boolean
+  isFirst: boolean
+  isLast: boolean
   onNext: (answer: Answer) => void
   onPrevious: () => void
 }
@@ -14,8 +14,8 @@ interface QuestionPageProps {
 export default function QuestionPage({
   question,
   answer,
-  isFirst = false,
-  isLast = false,
+  isFirst,
+  isLast,
   onNext,
   onPrevious,
 }: QuestionPageProps) {
