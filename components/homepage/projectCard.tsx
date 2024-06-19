@@ -17,12 +17,12 @@ export default function ProjectCard({
   return (
     <div
       className='w-full cursor-pointer project-card relative flex flex-col items-start justify-center gap-2'
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseOver={() => setIsHovered(true)}
+      onMouseOut={() => setIsHovered(false)}
     >
       <div
         className={cn(
-          'absolute item w-full hidden md:flex top-0 left-0 justify-between items-start px-5 pt-5 xl:px-5 xl:pt-5 z-30 transition-opacity ease-in-out duration-300',
+          'absolute item w-full hidden md:flex top-0 left-0 justify-between items-start px-5 pt-5 xl:px-5 xl:pt-5 z-[1] transition-opacity ease-in-out duration-300',
           isHovered ? 'opacity-100' : 'opacity-0'
         )}
       >
