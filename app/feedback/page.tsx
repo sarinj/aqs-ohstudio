@@ -1,4 +1,10 @@
 import FeedbackForm from './components/feedbackForm'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Feedback — OH.STUDIO',
+  description: 'A brand and product designer working with clients globally.',
+}
 
 export default function FeedbackPage() {
   return (

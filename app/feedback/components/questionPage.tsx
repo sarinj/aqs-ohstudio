@@ -30,7 +30,7 @@ export default function QuestionPage({
   return (
     <form key={question.name} className='space-y-4' onSubmit={handleNext}>
       <div>
-        <p className='text-[18px] font-semibold'>{question.question}</p>
+        <p className='text-[18px] font-medium'>{question.question}</p>
         <p className='text-gray-600'>
           Please select one of the following options:
         </p>

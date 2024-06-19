@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       <div className='flex flex-col items-center justify-center p-10 gap-10 w-full h-[50vh] xl:h-[70vh] max-w-[1400px] mx-auto'>
-        <div className='text-[36px] md:text-[48px] xl:text-[72px] text-center max-w-[700px] md:max-w-[600px] xl:max-w-[700px] leading-[1.2em]'>
+        <div className='text-[36px] font-medium md:text-[48px] xl:text-[72px] text-center max-w-[700px] md:max-w-[600px] xl:max-w-[700px] leading-[1.2em]'>
           A brand and product designer working with clients globally
         </div>
         <div className='hidden md:flex justify-start items-center gap-[10px]'>
@@ -27,8 +27,11 @@ export default function Home() {
           />
         ))}
       </div>
-      <div className='flex flex-col items-center justify-center p-10 w-full h-[50vh] md:h-[30vh] lg:h-[50vh] max-w-[1400px] mx-auto text-[30px] md:text-[38px] leading-[1.2em]'>
-        <p>Let &apos;s work together.</p>
+      <div
+        className='flex flex-col items-center justify-center p-10 w-full h-[50vh] md:h-[30vh] lg:h-[50vh] max-w-[1400px]
+       mx-auto text-[30px] font-medium md:text-[38px] leading-[1.2em]'
+      >
+        <p>Let&apos;s work together.</p>
         <a
           href='mailto:oli@oh.studio'
           className='text-gray-1 hover:text-gray-1/50 '
