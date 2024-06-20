@@ -23,14 +23,13 @@ const config: Config = {
           2: '#00000080',
         },
       },
-      fontFamily: {
-        reg: ['var(--font-reg)'],
-        med: ['var(--font-med)'],
+      transitionTimingFunction: {
+        blur: 'cubic-bezier(0.2, 0.65, 0.3, 0.9)',
       },
       keyframes: {
         'slide-top': {
-          '0%': { transform: 'translateY(0)', opacity: '0' },
-          '100%': { transform: 'translateY(-70px)', opacity: '1' },
+          '0%': { transform: 'translateY(70px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
         },
       },
       animation: {

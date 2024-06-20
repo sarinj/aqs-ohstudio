@@ -1,3 +1,4 @@
+import ContactSection from '@/components/homepage/contact'
 import ProjectCard from '@/components/homepage/projectCard'
 import { projects } from '@/components/homepage/projects'
 import Tag from '@/components/homepage/tag'
@@ -19,7 +20,7 @@ export default function Home() {
           <Tag label='Design Systems' />
         </div>
       </div>
-      <div className='grid grid-col-1 md:grid-cols-2 p-10 gap-x-5 gap-y-10 m-auto max-w-[1400px] animate-slide-top animate-delay-200'>
+      <div className='grid grid-col-1 md:grid-cols-2 p-10 gap-x-5 gap-y-10 mx-auto max-w-[1400px] animate-slide-top animate-delay-200'>
         {projects.map((project, index) => (
           <ProjectCard
             key={index + project.title}
@@ -30,19 +31,7 @@ export default function Home() {
           />
         ))}
       </div>
-      <div
-        className='flex flex-col items-center justify-center p-10 w-full h-[50vh] md:h-[30vh] lg:h-[50vh] max-w-[1400px]
-       mx-auto text-[30px] font-medium md:text-[38px] leading-[1.2em]'
-      >
-        <p>Let&apos;s work together.</p>
-        <a
-          href='mailto:oli@oh.studio'
-          className='text-gray-1 hover:text-gray-1/50 '
-        >
-          {' '}
-          Get in touch.
-        </a>
-      </div>
+      <ContactSection />
     </main>
   )
 }
