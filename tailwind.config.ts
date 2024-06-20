@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import plugin from 'tailwindcss/plugin'
 
 const config: Config = {
   content: [
@@ -26,8 +27,29 @@ const config: Config = {
         reg: ['var(--font-reg)'],
         med: ['var(--font-med)'],
       },
+      keyframes: {
+        'slide-top': {
+          '0%': { transform: 'translateY(0)', opacity: '0' },
+          '100%': { transform: 'translateY(-70px)', opacity: '1' },
+        },
+      },
+      animation: {
+        'slide-top':
+          'slide-top 0.6s cubic-bezier(.27,.63,.36,.75) var(--delay, 0s) both',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'animate-delay': value => ({
+            animationDelay: value,
+          }),
+        },
+        { values: theme('transitionDelay') }
+      )
+    }),
+  ],
 }
 export default config
