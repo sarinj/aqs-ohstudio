@@ -12,10 +12,10 @@ export default function ContactPage() {
     min-h-[calc(100vh-278px)] md:min-h-[calc(100vh-208px)] max-w-[1400px] mx-auto text-[36px] 
     font-medium md:text-[48px] xl:text-[72px] leading-[1.2em]'
     >
-      <p>Let&apos;s work together.</p>
+      <p className='animate-slide-top'>Let&apos;s work together.</p>
       <a
         href='mailto:oli@oh.studio'
-        className='text-gray-1 hover:text-gray-1/50 '
+        className='text-gray-1 hover:text-gray-1/50 animate-slide-top animate-delay-100'
       >
         {' '}
         Get in touch.
