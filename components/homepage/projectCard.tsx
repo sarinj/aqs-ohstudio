@@ -39,12 +39,11 @@ export default function ProjectCard({
         </div>
         <div
           className={cn(
-            'w-[40px] h-[40px] xl:w-[50px] xl:h-[50px] rounded-full cursor-pointer flex items-center justify-center transition-transform duration-300',
-            available ? 'bg-white' : 'bg-black'
+            'w-[40px] h-[40px] xl:w-[50px] xl:h-[50px] rounded-full cursor-pointer bg-white flex items-center justify-center',
+            ' translate-x-[-20px] translate-y-[20px] transition-transform duration-300',
+            { 'bg-black': !available },
+            { 'translate-x-[0px] translate-y-[0px]': isHovered }
           )}
-          style={{
-            transform: isHovered ? 'translate(0)' : 'translate(-20px, 20px)',
-          }}
         >
           {available ? (
             <MoreArrowIcon className='text-black' width='20' height='20' />
@@ -70,7 +69,7 @@ export default function ProjectCard({
       ) : (
         <div className='h-full w-full'>
           <video
-            className='rounded-xl  h-full w-full object-cover'
+            className='rounded-xl h-full w-full object-cover'
             autoPlay
             loop
             playsInline
