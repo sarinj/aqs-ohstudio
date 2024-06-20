@@ -16,13 +16,13 @@ export default function ProjectCard({
   const [isHovered, setIsHovered] = useState(false)
   return (
     <div
-      className='relative flex flex-col items-start justify-center gap-2 w-full cursor-pointer project-card '
+      className='relative flex flex-col items-start justify-center gap-2 w-full cursor-pointer'
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
     >
       <div
         className={cn(
-          'absolute item w-full hidden md:flex top-0 left-0 justify-between items-start px-5 pt-5 xl:px-5 xl:pt-5 z-[1] transition-opacity ease-in-out duration-300',
+          'absolute md:flex w-full hidden top-0 left-0 justify-between items-start px-5 pt-5 xl:px-5 xl:pt-5 z-[1] transition-opacity ease-in-out duration-300',
           isHovered ? 'opacity-100' : 'opacity-0'
         )}
       >
@@ -39,8 +39,8 @@ export default function ProjectCard({
         </div>
         <div
           className={cn(
-            'w-[40px] h-[40px] xl:w-[50px] xl:h-[50px] rounded-full cursor-pointer bg-white flex items-center justify-center',
-            ' translate-x-[-20px] translate-y-[20px] transition-transform duration-300',
+            'flex items-center justify-center w-[40px] h-[40px] xl:w-[50px] xl:h-[50px] rounded-full cursor-pointer bg-white ',
+            'translate-x-[-20px] translate-y-[20px] transition-transform duration-300',
             { 'bg-black': !available },
             { 'translate-x-[0px] translate-y-[0px]': isHovered }
           )}
@@ -64,23 +64,21 @@ export default function ProjectCard({
           width={715}
           height={546}
           alt='project'
-          className='w-full rounded-xl justify-center object-cover bg-cover bg-center'
+          className='w-full justify-center rounded-xl object-cover bg-cover bg-center'
         />
       ) : (
-        <div className='h-full w-full'>
-          <video
-            className='rounded-xl h-full w-full object-cover'
-            autoPlay
-            loop
-            playsInline
-            muted
-          >
-            <source src={src} type='video/mp4' />
-          </video>
-        </div>
+        <video
+          className='h-full w-full rounded-xl object-cover'
+          autoPlay
+          loop
+          playsInline
+          muted
+        >
+          <source src={src} type='video/mp4' />
+        </video>
       )}
 
-      <div className='text-sm md:hidden flex gap-2'>
+      <div className='flex md:hidden gap-2 text-sm'>
         <p>{title}</p>
         <p className={cn('text-gray-1', available ? 'hidden' : 'block')}>
           Coming Soon
