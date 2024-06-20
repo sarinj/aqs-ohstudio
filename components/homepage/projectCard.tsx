@@ -16,7 +16,7 @@ export default function ProjectCard({
   const [isHovered, setIsHovered] = useState(false)
   return (
     <div
-      className='w-full cursor-pointer project-card relative flex flex-col items-start justify-center gap-2'
+      className='relative flex flex-col items-start justify-center gap-2 w-full cursor-pointer project-card '
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
     >
@@ -55,7 +55,7 @@ export default function ProjectCard({
       </div>
       <div
         className={cn(
-          'overlay absolute w-full flex-col h-full rounded-xl hidden md:flex',
+          'absolute w-full flex-col h-full rounded-xl hidden md:flex bg-black bg-opacity-30 backdrop-blur-md transition-all ease-blur duration-300',
           isHovered ? 'opacity-100' : 'opacity-0'
         )}
       ></div>

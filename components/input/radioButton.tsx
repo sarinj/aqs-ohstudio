@@ -23,7 +23,7 @@ export default function RadioButton({
         type='radio'
         {...props}
         className={cn(
-          //   'appearance-none size-4 border rounded-full border-gray-400  checked:border-gray-600',
+          'size-[14px] border rounded-full border-gray-400  checked:border-gray-600',
           className
         )}
       />
