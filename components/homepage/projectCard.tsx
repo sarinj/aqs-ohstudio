@@ -46,7 +46,7 @@ export default function ProjectCard({
           )}
         >
           {available ? (
-            <MoreArrowIcon className='text-black' width='20' height='20' />
+            <MoreArrowIcon className='text-black' width='15' height='15' />
           ) : (
             <LockedIcon className='text-white' width='20' height='20' />
           )}
